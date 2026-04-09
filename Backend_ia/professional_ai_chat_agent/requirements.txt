@@ -6,3 +6,4 @@ sendgrid
 google-generativeai
 dateparser
 gtts
+aiohttp
