@@ -7,3 +7,9 @@ google-generativeai
 dateparser
 gtts
 aiohttp
+sqlalchemy
+pymysql
+cryptography
+requests
+numpy
+pytz
