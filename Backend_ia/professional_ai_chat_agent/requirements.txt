@@ -13,3 +13,5 @@ cryptography
 requests
 numpy
 pytz
+reportlab
+google-api-core
