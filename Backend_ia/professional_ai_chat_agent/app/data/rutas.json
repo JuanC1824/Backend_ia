@@ -1,0 +1,124 @@
+{
+  "routes": [
+    {
+      "name": "perfil",
+      "keywords": [
+        "mi perfil",
+        "ver mi perfil",
+        "ir a perfil",
+        "abrir perfil",
+        "datos personales",
+        "mis datos",
+        "editar perfil",
+        "actualizar datos",
+        "mis datos personales",
+        "ver mis datos",
+        "configurar perfil",
+        "cambiar datos",
+        "mi cuenta",
+        "datos de mi cuenta",
+        "ver cuenta"
+      ],
+      "route": "/perfil",
+      "action": "navigate",
+      "description": "Ir a la sección de tu perfil para ver y editar tus datos personales."
+    },
+    {
+      "name": "reportar incidente",
+      "keywords": [
+        "reportar incidente",
+        "reportar infraccion",
+        "reportar infracción",
+        "crear reporte",
+        "hacer reporte",
+        "subir reporte",
+        "enviar reporte",
+        "crear un reporte",
+        "como reportar",
+        "cómo reportar",
+        "reportar vehiculo",
+        "reportar vehículo",
+        "reportar carro",
+        "reportar mal parqueo",
+        "reportar mal estacionado",
+        "reportar auto",
+        "quiero reportar",
+        "donde reportar",
+        "ir a reportar",
+        "abrir reportar",
+        "formulario de reporte",
+        "nuevo reporte",
+        "registrar incidente",
+        "reportar choque",
+        "reportar accidente",
+        "reportar semaforo",
+        "reportar luz",
+        "reportar pothole",
+        "reportar bache"
+      ],
+      "route": "/subir-reporte",
+      "action": "navigate",
+      "description": "Ir a la página para registrar un reporte de infracción o incidente."
+    },
+    {
+      "name": "mis reportes",
+      "keywords": [
+        "estado de mi reporte",
+        "ver reporte",
+        "ver mis reportes",
+        "mis reportes",
+        "consultar reporte",
+        "consultar mis reportes",
+        "mi reporte",
+        "estado del reporte",
+        "historial de reportes",
+        "ver historial de reportes",
+        "mis incidentes",
+        "ver mis incidentes",
+        "mis infracciones",
+        "ver estado",
+        "estado de mi reporte",
+        "donde esta mi reporte",
+        "como va mi reporte",
+        "progreso de mi reporte"
+      ],
+      "route": "/perfil",
+      "action": "navigate",
+      "description": "Ir a la sección donde puedes ver tus reportes enviados y su estado."
+    },
+    {
+      "name": "recuperar contraseña",
+      "keywords": [
+        "recuperar contraseña",
+        "olvide mi contraseña",
+        "olvidé mi contraseña",
+        "restablecer contraseña",
+        "cambiar contraseña",
+        "no recuerdo mi contraseña",
+        "resetear contraseña",
+        "recuperar mi clave",
+        "olvide mi clave"
+      ],
+      "route": "/recuperar",
+      "action": "navigate",
+      "description": "Ir a la página para recuperar la contraseña."
+    },
+    {
+      "name": "home",
+      "keywords": [
+        "ir a inicio",
+        "inicio",
+        "home",
+        "pagina principal",
+        "volver al inicio",
+        "volver a home",
+        "menu principal",
+        "ir al menu",
+        "menu"
+      ],
+      "route": "/home",
+      "action": "navigate",
+      "description": "Ir a la página principal de la aplicación."
+    }
+  ]
+}

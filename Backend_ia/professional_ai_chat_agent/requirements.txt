@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+sendgrid
+google-generativeai
+dateparser
+gtts
