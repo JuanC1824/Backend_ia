@@ -1,4 +1,4 @@
-from sqlalchemy import Column, BigInteger, String, Enum
+from sqlalchemy import Column, BigInteger, String, Enum, Boolean
 from app.db.base import Base
 
 
@@ -16,6 +16,8 @@ class Usuario(Base):
     tipo_documento = Column(String(255), nullable=True)
 
     password = Column(String(255), nullable=False)
+
+    email_verificado = Column(Boolean, nullable=False, default=False)
 
     role = Column(
         Enum("ADMIN", "AGENTE", "CIUDADANO", name="role_enum"),
