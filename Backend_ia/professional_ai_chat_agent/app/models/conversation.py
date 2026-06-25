@@ -1,4 +1,5 @@
-from sqlalchemy import Column, BigInteger, String, Boolean, TIMESTAMP, ForeignKey
+from sqlalchemy import Column, String, Boolean, TIMESTAMP, ForeignKey
+from sqlalchemy.dialects.mysql import CHAR
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
 from app.db.base import Base
@@ -7,8 +8,8 @@ from app.db.base import Base
 class Conversation(Base):
     __tablename__ = "conversaciones"
 
-    id_conversacion = Column(BigInteger, primary_key=True, index=True)
-    id_usuario = Column(BigInteger, ForeignKey("usuarios.id_usuario"), nullable=False)
+    id_conversacion = Column(CHAR(36), primary_key=True, index=True)
+    id_usuario = Column(CHAR(36), ForeignKey("usuarios.id_usuario"), nullable=False)
 
     titulo = Column(String(255), nullable=True)
     titulo_manual = Column(Boolean, default=False)

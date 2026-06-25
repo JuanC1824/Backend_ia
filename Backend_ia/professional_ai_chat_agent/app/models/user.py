@@ -1,11 +1,12 @@
-from sqlalchemy import Column, BigInteger, String, Enum, Boolean
+from sqlalchemy import Column, String, Enum, Boolean
+from sqlalchemy.dialects.mysql import CHAR
 from app.db.base import Base
 
 
 class Usuario(Base):
     __tablename__ = "usuarios"
 
-    id_usuario = Column(BigInteger, primary_key=True, index=True)
+    id_usuario = Column(CHAR(36), primary_key=True, index=True)
 
     correo = Column(String(255), nullable=False, unique=True)
 

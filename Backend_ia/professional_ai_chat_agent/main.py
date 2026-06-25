@@ -185,6 +185,16 @@ def synthesize_gtts(text: str, output_path: str):
 # 1️⃣ Primero creas la app
 app = FastAPI(title=settings.APP_NAME)
 
+@app.on_event("startup")
+async def crear_tablas():
+    from app.db.base import Base
+    from app.db.session import engine
+    import app.models.user
+    import app.models.conversation
+    import app.models.message
+    import app.models.embedding_conversacion
+    Base.metadata.create_all(bind=engine)
+
 app.include_router(ai.router, prefix="/ai", tags=["AI"])
 
 # 2️⃣ Luego agregas CORS

@@ -1,13 +1,15 @@
 from sqlalchemy import Column, BigInteger, Text, JSON, ForeignKey
+from sqlalchemy.dialects.mysql import CHAR
 from sqlalchemy.orm import relationship
 from app.models.conversation import Conversation
-from app.db.base import Base  # tu clase Base de SQLAlchemy
+from app.db.base import Base
+
 
 class EmbeddingConversacion(Base):
     __tablename__ = "embeddings_conversaciones"
 
-    id = Column(BigInteger, primary_key=True, autoincrement=True)
-    id_conversacion = Column(BigInteger, ForeignKey("conversaciones.id_conversacion", ondelete="CASCADE"))
+    id = Column(CHAR(36), primary_key=True)
+    id_conversacion = Column(CHAR(36), ForeignKey("conversaciones.id_conversacion", ondelete="CASCADE"))
     embedding = Column(JSON, nullable=False)
     contenido = Column(Text, nullable=False)
 
